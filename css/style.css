@@ -1,0 +1,101 @@
+:root{
+    --main-crl: #24353F;
+    --main-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.mainShadow{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--main-crl);
+}
+
+#signInPage, #LogInPage{
+    max-width: 832px !important;
+    box-shadow: var(--main-shadow);
+}
+
+input{
+    background-color: var(--main-crl) !important;
+    color: white !important;
+}
+
+input::placeholder{
+    color: white !important;
+}
+
+h1{
+    color: #17A2B8;
+}
+
+#logIn, #signUp{
+    text-decoration: none;
+}
+
+#logIn:hover, #signUp:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+/* ===================================================================== */
+#home{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    height: 90vh;
+}
+
+.helloUsername{
+    width: 75%;
+    box-shadow: var(--main-shadow);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------------- */
+.errorMsg{
+    text-align: left;
+    background-color: #c15134b4;
+    font-size: 14px;
+    box-shadow: 0px -3px 17px 0px #c15134b4;
+    padding: 10px 20px;
+    max-width: 500px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-weight: 600;
+    max-width: 100%;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width : 992px){
+    #logout{
+        width: 100%;
+        margin-top: 10px;
+    } 
+}
+
+
+
+
+
+
+
+
+

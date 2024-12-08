@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+<body>
+    <div class="container mt-5 text-center p-5"  id="signInPage">
+        <div class="row">
+            <div class="titel">
+                <h1>Smart Login System</h1>
+            </div>
+            <form>
+                <input type="text" class="form-control my-3 inputArr" placeholder="Enter your name " name="signName" id="signName">
+                <p id="signNameError" class="errorMsg">
+                    Error!! : The name length must be (3-15). letters( a-z & A-Z & - _ ) are allowed
+                </p>
+
+                <input type="email" class="form-control my-3 inputArr" placeholder="Enter your email" name="signEmail" id="signEmail">
+                <p id="signEmailError" class="errorMsg">
+                    Error!! : The E-mail must conatian @ and can't contain any spaces  .
+                </p>
+
+                <input type="password" class="form-control my-3 inputArr" placeholder="Enter your password" name="signPass" id="signPass">
+                <p id="signPassError" class="errorMsg">
+                    Error!! : Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character.
+                </p>
+                <button id="signUPButton" type="button" class="btn btn-outline-info w-100 mt-3">Sign Up</button>
+            </form>
+            <p class="text-white mt-2">You have an account? <a href="index.html" id="signUp" class="text-white ">Log In</a></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

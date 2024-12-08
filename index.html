@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5 text-center p-5" id="LogInPage">
+        <div class="row">
+            <div class="titel">
+                <h1>Smart Login System</h1>
+            </div>
+            <form>
+                <input type="email" class="form-control my-3 inputArr" placeholder="Enter your email" name="logEmail" id="logEmail">
+                <p id="logEmailError" class="errorMsg">
+                    Error!! : The E-mail must conatian @ and can't contain any spaces  .
+                </p>
+
+                <input type="password" class="form-control my-3 inputArr" placeholder="Enter your password" name="logPass" id="logPass">
+                <p id="logPassError" class="errorMsg">
+                    Error!! : Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character.
+                </p>
+
+                <button id="loginButton" type="button" class="btn btn-outline-info w-100 mt-3">Login</button>
+            </form>
+            <p class="text-white mt-2">Don’t have an account ? <a href="signup.html" id="logIn" class="text-white ">sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
